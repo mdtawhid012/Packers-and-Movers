@@ -2,9 +2,33 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
+    max-width: 100%; 
+    max-height: auto; 
+    width: auto; 
+    height: auto; 
     margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .image-container img {
+        max-width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .image-container img {
+        max-width: calc(100% / 3 - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    .image-container img {
+        max-width: calc(100% / 4 - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-container img {
+        max-width: calc(100% / 5 - 20px);
+    }
 }
